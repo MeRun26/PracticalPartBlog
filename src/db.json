@@ -3,23 +3,23 @@
     {
       "id": "001",
       "login": "Miran",
-      "password": "qwerty123",
+      "password": "qwe123",
       "registered_at": "2050-09-22",
       "role_id": 0
     },
     {
       "id": "8983",
       "login": "Liza",
-      "password": "qwerty123",
+      "password": "qwe123",
       "registered_at": "2047-08-03 20:51",
       "role_id": 1
     },
     {
-      "id": "0559",
-      "login": "MMM",
-      "password": "qwerty123",
-      "registered_at": "2049-07-03 12:22",
-      "role_id": 2
+      "login": "Petr",
+      "password": "qwe123",
+      "registered_at": "2038-08-22 03:32",
+      "role_id": 2,
+      "id": "aU5r-nR"
     }
   ],
   "roles": [
@@ -52,7 +52,7 @@
       "id": "002",
       "title": "Подвергнуты целой серии независимых исследований",
       "image_url": "https://fastly.picsum.photos/id/448/280/150.jpg?hmac=khnuP3mVrM6gGCDSfypI6d26ghfgXH4FKCPr4kysnN4",
-      "content": "Противоположная точка зрения подразумевает, что непосредственные участники технического прогресса формируют глобальную экономическую сеть и при этом — подвергнуты целой серии независимых исследований.",
+      "content": "Противоположнаяточка зрения подразумевает, что непосредственные участники технического прогресса формируют глобальную экономическую сеть и при этом — подвергнуты целой серии независимых исследований.",
       "published_at": "2042-02-12"
     },
     {
@@ -191,18 +191,18 @@
       "content": "КОМЕНТАРИЙ3"
     },
     {
-      "id": "63c5",
-      "author_id": "001",
-      "post_id": "a3df",
-      "published_at": "2047-10-06 14:50",
-      "content": "ывавмва"
-    },
-    {
       "id": "3cb5",
       "author_id": "001",
       "post_id": "002",
       "published_at": "2036-12-18 14:49",
       "content": "КОМЕНТАРИЙ4"
+    },
+    {
+      "author_id": "aU5r-nR",
+      "post_id": "002",
+      "published_at": "2049-12-10 05:55",
+      "content": "коммент от Петра",
+      "id": "QlRwnaI"
     }
   ],
   "sessions": [
@@ -251,15 +251,15 @@
       "id": "rzhQ4UM"
     },
     {
-      "hash": "0.72784736348358070046060674940235912799835205078125",
+      "hash": "0.71621142913559898701691963651683181524276733398438",
       "user": {
         "id": "8983",
         "login": "Liza",
-        "password": "qwerty123",
+        "password": "qwe123",
         "registeredAt": "2047-08-03 20:51",
         "roleId": 1
       },
-      "id": "ewnJaAH"
+      "id": "SXDytci"
     }
   ]
 }

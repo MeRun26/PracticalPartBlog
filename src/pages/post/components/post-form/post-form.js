@@ -27,8 +27,6 @@ const PostFormContainer = ({
 
 	const onSave = () => {
 		const newContent = sanitizeContent(contentRef.current.innerText);
-		console.log('newContent:', newContent)
-
 
 		dispatch(
 			savePostAsync(requestServer, {
@@ -55,7 +53,9 @@ const PostFormContainer = ({
 				id={id}
 				publishedAt={publishedAt}
 				margin="20px 0"
-				editButton={<Icon id="fa-floppy-o" size="21px" onClick={onSave} />}
+				editButton={
+					<Icon id="fa-floppy-o" size="21px" margin="0 10px" onClick={onSave} />
+				}
 			/>
 			<div
 				ref={contentRef}
