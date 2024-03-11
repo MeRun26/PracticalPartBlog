@@ -1,12 +1,13 @@
 import { useLayoutEffect, useRef, useState } from 'react';
-import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import { Icon, Input } from '../../../../components';
+import { PROP_TYPE } from '../../../../constants';
+import { useDispatch } from 'react-redux';
+import { useServerRequest } from '../../../../hooks';
 import { SpecialPanel } from '../special-panel/special-panel';
 import { sanitizeContent } from './utils/sanitize-content';
-import { useDispatch } from 'react-redux';
 import { savePostAsync } from '../../../../actions';
-import { useServerRequest } from '../../../../hooks';
+import styled from 'styled-components';
 
 const PostFormContainer = ({
 	className,
@@ -82,3 +83,7 @@ export const PostForm = styled(PostFormContainer)`
 		white-space: pre-line;
 	}
 `;
+
+PostForm.propTypes = {
+	post: PROP_TYPE.POST.isRequired,
+};

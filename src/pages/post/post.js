@@ -40,7 +40,7 @@ const PostContainer = ({ className }) => {
 		return null;
 	}
 
-	const SecificPostPage =
+	const SpecificPostPage =
 		isEditing || isCreating ? (
 			<PrivateContent access={[ROLE.ADMIN]} serverError={error}>
 				<div className={className}>
@@ -54,7 +54,7 @@ const PostContainer = ({ className }) => {
 			</div>
 		);
 
-	return error ? <Error error={error} /> : SecificPostPage;
+	return error ? <Error error={error} /> : SpecificPostPage;
 };
 
 export const Post = styled(PostContainer)`

@@ -1,7 +1,8 @@
-import { Icon } from '../../../../../../components';
-import { openModal, CLOSE_MODAL, removeCommentAsync } from '../../../../../../actions';
+import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
+import { Icon } from '../../../../../../components';
 import { useServerRequest } from '../../../../../../hooks';
+import { openModal, CLOSE_MODAL, removeCommentAsync } from '../../../../../../actions';
 import { selectUserRole } from '../../../../../../selectors';
 import { ROLE } from '../../../../../../constants';
 import styled from 'styled-components';
@@ -89,3 +90,11 @@ export const Comment = styled(CommentContainer)`
 		display: flex;
 	}
 `;
+
+Comment.propTypes = {
+	postId: PropTypes.string.isRequired,
+	id: PropTypes.number.isRequired,
+	author: PropTypes.string.isRequired,
+	content: PropTypes.string.isRequired,
+	publishedAt: PropTypes.string.isRequired,
+};
